@@ -79,11 +79,13 @@ nav img {
     padding: 10px 15px;
     color: #fff;
 	font-size: 3vh;
-    text-decoration: none
+    text-decoration: none;
+	border-bottom: 0.5vh solid #00000000;
 }
 
 #nav-menu a:hover {
-	text-decoration: underline #36E7EA 1px
+	border-bottom: 0.5vh solid;
+	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
 }
 
 #sidemenu-open-btn,
@@ -165,6 +167,8 @@ nav img {
 	justify-content: center;
 }
 
+
+
 #cv-button a {
 	color: #fff;
 	font-size: 30px;
@@ -175,11 +179,13 @@ nav img {
 	margin: 50px;
 	border: 5px solid #36E7EA;
 	border-radius: 100px;
+	transition: 0.5s;
 }
 
 #cv-button a:hover {
 	cursor: pointer;
 	border-color: #E506F3;
+	
 }
 
 /*skills*/
@@ -212,6 +218,8 @@ nav img {
 	border: 5px solid #36E7EA;
 	border-radius: 15px;
 	overflow: hidden;
+	transition: 0.5s;
+	
 }
 
 .project:hover {
@@ -277,6 +285,7 @@ form input {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	transition: 0.5s;
 
 }
 
