@@ -108,18 +108,18 @@ nav img {
 /*showcase*/
 
 #showcase {
-	height: 90vh;
+	height: 100vh;
 	width: 100%;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 10vh;
-	background-image: url('../showcase.jpg');
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	
 }
 
 #showcase h1 {
@@ -156,9 +156,11 @@ nav img {
 }
 
 #portrait img {
+	aspect-ratio: 1/1;
 	width: 50%;
-	height: auto;
-	border-radius: 30px;
+	border-radius: 100%;
+	object-fit: contain;
+	background: #fff;
 }
 
 #cv-button {
@@ -357,6 +359,12 @@ footer a {
 #copyright {
 	font-size: 2vh;
 	text-align: center;
+}
+
+/* Ignore theme */
+
+p {
+	color: #fff !important
 }
 
 
