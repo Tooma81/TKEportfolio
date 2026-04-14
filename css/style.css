@@ -140,11 +140,27 @@ nav img {
 }
 
 #intro {
-	width: 50%;
+	width: 60%;
 	line-height: 2;
 	font-size: 2.5vh;
 	margin: 20px
 }
+
+#intro h1 {
+	font-family: 'Monaco';
+    font-style: normal;
+	text-align: start;
+	border-bottom: 0.5vh solid;
+	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
+}
+
+/* Showcase ignore theme */
+
+#intro p, #intro h1 {
+	color: #fff !important
+}
+
+/* Portrait */
 
 #portrait {
 	width: 50%;
@@ -162,6 +178,8 @@ nav img {
 	object-fit: contain;
 	background: #fff;
 }
+
+/* CV Button */
 
 #cv-button {
 	width: 100%;
@@ -250,7 +268,7 @@ nav img {
 #contact {
 	color: #fff;
 	padding: 40px;
-	background-image: url('../showcase.jpg');
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -359,12 +377,6 @@ footer a {
 #copyright {
 	font-size: 2vh;
 	text-align: center;
-}
-
-/* Ignore theme */
-
-p {
-	color: #fff !important
 }
 
 
