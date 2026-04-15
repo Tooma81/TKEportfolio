@@ -149,6 +149,33 @@ nav img {
 	text-decoration: none;
 }
 
+/* Scroll tip */
+
+@keyframes scrolltipanim {
+	from {
+    	transform: translateY(0);
+	}
+	to {
+		transform: translateY(-10px);
+	}
+}
+
+.scroll-tip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	font-size: 24px;
+	animation: scrolltipanim 1s infinite;
+	animation-direction: alternate;
+	bottom: 20px
+}
+
+.scroll-tip-arrow {
+	width: 40px;
+}
+
 /*about*/
 
 #about-info {
@@ -235,8 +262,8 @@ nav img {
 }
 
 .skill-logos-row a img {
-	max-height: 20vh;
-	padding: 2vw
+	height: 25vh;
+	padding: 2vh 3vw
 }
 
 /*projects*/
@@ -338,6 +365,7 @@ form input {
 	max-width: 150px;
 	padding: 5px 0;
 	margin: 10px 30px;
+	transition: 0.5s;
 }
 
 #form-btn input:hover {
