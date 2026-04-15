@@ -13,11 +13,28 @@ body {
 	background: #000;
 }
 
+/* Hide scrollbar */
+html, body {
+    /* For Chrome, Safari, and newer versions of Edge */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For Firefox */
+    scrollbar-width: none;
+
+    /* For Internet Explorer and older Edge */
+    -ms-overflow-style: none;
+
+    /* Ensure scrolling is still enabled */
+    overflow-y: scroll; 
+}
+
 body h1 {
 	font-size: 5vh;
 	text-align: center;
 	margin: 30px 30px 20px;
-	color: #fff
+	color: #fff;
 }
 
 p {
@@ -140,11 +157,27 @@ nav img {
 }
 
 #intro {
-	width: 50%;
+	width: 60%;
 	line-height: 2;
 	font-size: 2.5vh;
 	margin: 20px
 }
+
+#intro h1 {
+	font-family: 'Monaco';
+    font-style: normal;
+	text-align: start;
+	border-bottom: 0.5vh solid;
+	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
+}
+
+/* Showcase ignore theme */
+
+#intro p, #intro h1 {
+	color: #fff !important
+}
+
+/* Portrait */
 
 #portrait {
 	width: 50%;
@@ -162,6 +195,8 @@ nav img {
 	object-fit: contain;
 	background: #fff;
 }
+
+/* CV Button */
 
 #cv-button {
 	width: 100%;
@@ -192,16 +227,16 @@ nav img {
 
 /*skills*/
 
-#skill-logos {
+.skill-logos-row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 50px;
 	flex-wrap: wrap;
 }
 
-#skill-logos img {
+.skill-logos-row a img {
 	max-height: 20vh;
-	padding: 1vw
+	padding: 2vw
 }
 
 /*projects*/
@@ -250,7 +285,7 @@ nav img {
 #contact {
 	color: #fff;
 	padding: 40px;
-	background-image: url('../showcase.jpg');
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../showcase.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -359,12 +394,6 @@ footer a {
 #copyright {
 	font-size: 2vh;
 	text-align: center;
-}
-
-/* Ignore theme */
-
-p {
-	color: #fff !important
 }
 
 
