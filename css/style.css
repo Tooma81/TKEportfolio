@@ -13,6 +13,23 @@ body {
 	background: #000;
 }
 
+/* Hide scrollbar */
+html, body {
+    /* For Chrome, Safari, and newer versions of Edge */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For Firefox */
+    scrollbar-width: none;
+
+    /* For Internet Explorer and older Edge */
+    -ms-overflow-style: none;
+
+    /* Ensure scrolling is still enabled */
+    overflow-y: scroll; 
+}
+
 body h1 {
 	font-size: 5vh;
 	text-align: center;
