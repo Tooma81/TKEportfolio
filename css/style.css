@@ -8,6 +8,10 @@
 
 /* general */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Courier New', monospace;
 	background: #000;
@@ -71,6 +75,7 @@ nav {
 	padding: 20px;
 	border-bottom: 0.5vh solid;
 	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
+	z-index: 999;
 }
 
 nav button {
@@ -147,6 +152,47 @@ nav img {
 	font-size: 3vh;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* Scroll tip */
+
+@keyframes scrolltipanim {
+	from {
+    	transform: translateY(0);
+	}
+	to {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes scrolltipappear {
+	from {
+    	z-index: -2;
+	}
+	to {
+		z-index: 0;
+	}
+}
+
+.scroll-tip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	font-size: 24px;
+	animation: 
+		scrolltipanim 1s infinite alternate,
+		scrolltipappear 10s;
+	bottom: 20px;
+}
+
+.scroll-tip p {
+	color: #fff !important;
+}
+
+.scroll-tip-arrow {
+	width: 40px;
 }
 
 /*about*/
@@ -235,8 +281,8 @@ nav img {
 }
 
 .skill-logos-row a img {
-	max-height: 20vh;
-	padding: 2vw
+	height: 25vh;
+	padding: 2vh 3vw
 }
 
 /*projects*/
@@ -338,6 +384,7 @@ form input {
 	max-width: 150px;
 	padding: 5px 0;
 	margin: 10px 30px;
+	transition: 0.5s;
 }
 
 #form-btn input:hover {
