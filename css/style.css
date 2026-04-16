@@ -160,6 +160,15 @@ nav img {
 	}
 }
 
+@keyframes scrolltipappear {
+	from {
+    	z-index: -2;
+	}
+	to {
+		z-index: 0;
+	}
+}
+
 .scroll-tip {
 	display: flex;
 	flex-direction: column;
@@ -167,9 +176,10 @@ nav img {
 	align-items: center;
 	position: absolute;
 	font-size: 24px;
-	animation: scrolltipanim 1s infinite;
-	animation-direction: alternate;
-	bottom: 20px
+	animation: 
+		scrolltipanim 1s infinite alternate,
+		scrolltipappear 10s;
+	bottom: 20px;
 }
 
 .scroll-tip-arrow {
