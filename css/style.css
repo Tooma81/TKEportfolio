@@ -8,6 +8,10 @@
 
 /* general */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Courier New', monospace;
 	background: #000;
@@ -71,6 +75,7 @@ nav {
 	padding: 20px;
 	border-bottom: 0.5vh solid;
 	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
+	z-index: 999;
 }
 
 nav button {
@@ -180,6 +185,10 @@ nav img {
 		scrolltipanim 1s infinite alternate,
 		scrolltipappear 10s;
 	bottom: 20px;
+}
+
+.scroll-tip p {
+	color: #fff !important;
 }
 
 .scroll-tip-arrow {
