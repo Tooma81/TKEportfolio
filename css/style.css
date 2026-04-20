@@ -384,7 +384,7 @@ form input {
 	max-width: 150px;
 	padding: 5px 0;
 	margin: 10px 30px;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 
 #form-btn input:hover {
@@ -399,6 +399,19 @@ form input {
 #message {
 	height: 100px;
 	width: 100%;
+}
+
+/* Copy Email */
+
+.copy-email {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: 15px;
+}
+
+.copy-email a {
+	color: #36E7EA;
 }
 
 /*footer*/
