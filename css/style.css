@@ -301,7 +301,7 @@ nav img {
 	border: 5px solid #36E7EA;
 	border-radius: 15px;
 	overflow: hidden;
-	transition: 0.5s;
+	transition: 0.3s;
 	
 }
 
@@ -368,7 +368,7 @@ form input {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	transition: 0.5s;
+	transition: 0.3s;
 
 }
 
