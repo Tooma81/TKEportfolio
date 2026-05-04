@@ -301,8 +301,6 @@ nav img {
 	margin: 40px;
 	border-radius: 15px;
 	background: #000000;
-	transition: 0.3s;
-	
 }
 
 .project::before {

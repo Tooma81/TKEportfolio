@@ -1,3 +1,5 @@
+const { divide } = require("mathjs");
+
 //script for theme switcher
 function lightMode() {
     document.getElementById("light-switch").style.display = "none";
@@ -29,6 +31,9 @@ function lightMode() {
     document.querySelectorAll("label").forEach(label => {
         label.style.color = "#000";
     });
+    document.querySelectorAll(".project").forEach(element => {
+        element.style.background = "#fff";
+    });
     document.body.style.background = "#fff";
     console.log("light mode enabled")
 }
@@ -57,6 +62,9 @@ function darkMode() {
     });
     document.querySelectorAll("label").forEach(label => {
         label.style.color = "#fff";
+    });
+    document.querySelectorAll(".project").forEach(element => {
+        element.style.background = "#000";
     });
     document.body.style.background = "#000"
     console.log("dark mode enabled")
