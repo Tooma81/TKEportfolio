@@ -294,15 +294,41 @@ nav img {
 }
 
 .project {
+	position: relative;
 	text-align: center;
-	height: 450px;
+	height: 250px;
 	width: 300px;
 	margin: 40px;
-	border: 5px solid #36E7EA;
 	border-radius: 15px;
-	overflow: hidden;
+	background: #000000;
 	transition: 0.3s;
 	
+}
+
+.project::before {
+	content: "";
+	position: absolute;
+	top: -5px; 
+	left: -5px;
+	right: -5px;
+	bottom: -5px; 
+	background: linear-gradient(to right, #E506F3, #36E7EA);
+	border-radius: 20px; 
+	z-index: -1;
+}
+
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 14px 0;
+}
+
+.project-links a {
+	font-size: 30px;
+	color: #36E7EA
 }
 
 .project:hover {
