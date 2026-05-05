@@ -324,13 +324,21 @@ nav img {
 	padding: 14px 0;
 }
 
-.project-links a {
-	font-size: 30px;
-	color: #36E7EA
+.project-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
-.project:hover {
-	border-color: #E506F3;
+.project-links a {
+	font-size: 30px;
+	color: #36E7EA;
+	transition: 0.3s;
+	margin: 0 18px;
+}
+
+.project-links a:hover {
+	color: #E506F3;
 }
 
 .project a {
