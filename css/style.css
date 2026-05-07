@@ -63,19 +63,41 @@ img {
 }
 
 /* navbar */
+
+#header-logo img {
+	height: 9vh;
+}
+
 nav {
+	position: fixed;
+	top: 0;
+	
+	height: 10vh;
+	width: 100%;
+
+	z-index: 999;
+}
+
+.nav-content {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	position: fixed;
-	top: 0;
-	background: #000;
-	height: 15vh;
+	height: 100%;
 	width: 100%;
 	padding: 20px;
-	border-bottom: 0.5vh solid;
-	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
-	z-index: 999;
+	background: #000;
+}
+
+.nav-content::before {
+	content: "";
+	position: absolute;
+	top: 0; 
+	left: -5px;
+	right: -5px;
+	bottom: -2px; 
+	background: linear-gradient(315deg, #E506F3, #36E7EA);
+	z-index: -2;
+	filter: blur(2px);
 }
 
 nav button {
@@ -106,7 +128,7 @@ nav img {
 }
 
 #nav-menu a:hover {
-	border-bottom: 0.5vh solid;
+	border-bottom: 0.4vh solid;
 	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
 }
 
