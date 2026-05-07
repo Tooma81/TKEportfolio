@@ -334,16 +334,16 @@ nav img {
 	bottom: -5px; 
 	background: linear-gradient(315deg, #E506F3, #36E7EA);
 	border-radius: 20px; 
-	transition: 0.2s;
+	transition: 0.1s;
 	z-index: -1;
 }
 
 .project:hover::before {
-	top: -6px; 
-	left: -6px;
-	right: -6px;
-	bottom: -6px;
-	filter: blur(1px); 
+	top: -7px; 
+	left: -7px;
+	right: -7px;
+	bottom: -7px;
+	filter: blur(2px); 
   	opacity: 1;
 }
 
@@ -365,7 +365,7 @@ nav img {
 .project-links a {
 	font-size: 30px;
 	color: #36E7EA !important; 
-	transition: 0.3s;
+	transition: 0.2s;
 	margin: 0 18px;
 }
 
