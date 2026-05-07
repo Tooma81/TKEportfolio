@@ -34,6 +34,9 @@ function lightMode() {
     document.querySelectorAll(".project").forEach(element => {
         element.style.background = "#fff";
     });
+    document.querySelectorAll(".nav-content").forEach(element => {
+        element.style.background = "#fff";
+    });
     document.body.style.background = "#fff";
     console.log("light mode enabled")
 }
@@ -64,6 +67,9 @@ function darkMode() {
         label.style.color = "#fff";
     });
     document.querySelectorAll(".project").forEach(element => {
+        element.style.background = "#000";
+    });
+    document.querySelectorAll(".nav-content").forEach(element => {
         element.style.background = "#000";
     });
     document.body.style.background = "#000"
