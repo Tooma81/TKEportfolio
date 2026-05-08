@@ -53,9 +53,10 @@ section {
 hr {
 	border: 0;
 	width: 40%;
-	height: 0.3vh;
+	height: 0.5vh;
 	background: linear-gradient(to right, #E506F3, #36E7EA);
-	margin: auto
+	margin: auto;
+	border-radius: 10px;
 }
 
 img {
@@ -235,14 +236,17 @@ nav img {
 	font-family: 'Monaco';
     font-style: normal;
 	text-align: start;
-	border-bottom: 0.5vh solid;
-	border-image: linear-gradient(to right, #E506F3, #36E7EA) 1;
+}
+
+#intro hr {
+	width: 100%;
 }
 
 /* Showcase ignore theme */
 
 #intro p, #intro h1 {
-	color: #fff !important
+	color: #fff !important;
+	margin: 40px 0 20px 0;
 }
 
 /* Portrait */
