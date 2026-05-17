@@ -9,6 +9,7 @@ p {
 }
 
 /*navbar*/
+
 #header-logo img {
     height: 8vh;
 }
@@ -34,8 +35,6 @@ p {
     width: 100%;
 }
 
-
-
 #sidemenu-open-btn,
 #sidemenu-close-btn {
     display: block;
@@ -50,12 +49,17 @@ p {
 #sidemenu-close-btn {
     text-align: right;
     padding: 5vh;
+    transform: translateY(2.5vh);
 }
 
 #dark-switch,
 #light-switch {
     font-size: 3vh;
     margin-top: 2vh;
+}
+
+.scroll-tip {
+    filter: opacity(0);
 }
 
 /*about*/
