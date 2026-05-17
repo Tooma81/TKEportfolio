@@ -9,8 +9,11 @@ p {
 }
 
 /*navbar*/
+#header-logo img {
+    height: 8vh;
+}
 
-nav {
+.nav-content {
     justify-content: space-between;
 }
 

@@ -67,6 +67,9 @@ img {
 
 #header-logo img {
 	height: 9vh;
+	width: auto;
+	display: block;
+	transform: translateX(8vw);
 }
 
 nav {
@@ -105,13 +108,6 @@ nav button {
 	color: #fff;
 	background: none;
 	border: none;
-}
-
-nav img {
-	height: 10vh;
-	width: auto;
-	display: block;
-	transform: translateX(8vw);
 }
 
 #nav-menu {
