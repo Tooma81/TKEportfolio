@@ -456,7 +456,7 @@ form input {
 	border-color: #E506F3;
 }
 
-#name, #email {
+#subject, #email {
 	height: 30px;
 }
 
